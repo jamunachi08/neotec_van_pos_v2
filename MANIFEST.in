@@ -1,0 +1,3 @@
+include README.md
+recursive-include neotec_van_pos *.json *.py *.md
+recursive-include neotec_van_pos/public *
