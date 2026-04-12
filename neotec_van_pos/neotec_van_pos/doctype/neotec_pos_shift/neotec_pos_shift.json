@@ -1,0 +1,112 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec POS Shift",
+  "module": "Neotec VAN POS",
+  "custom": 0,
+  "istable": 0,
+  "issingle": 0,
+  "autoname": "hash",
+  "engine": "InnoDB",
+  "field_order": [
+    "shift_local_id",
+    "device",
+    "company",
+    "pos_profile",
+    "user",
+    "period_start_date",
+    "period_end_date",
+    "status",
+    "opening_balance_json",
+    "payment_reconciliation_json",
+    "details_json",
+    "created_invoice_status",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "shift_local_id",
+      "fieldtype": "Data",
+      "label": "Shift Local ID",
+      "unique": 1
+    },
+    {
+      "fieldname": "device",
+      "fieldtype": "Link",
+      "label": "Device",
+      "options": "Neotec POS Device"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "pos_profile",
+      "fieldtype": "Link",
+      "label": "POS Profile",
+      "options": "POS Profile"
+    },
+    {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "label": "User",
+      "options": "User"
+    },
+    {
+      "fieldname": "period_start_date",
+      "fieldtype": "Datetime",
+      "label": "Period Start Date"
+    },
+    {
+      "fieldname": "period_end_date",
+      "fieldtype": "Datetime",
+      "label": "Period End Date"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Open\nClosed",
+      "default": "Open"
+    },
+    {
+      "fieldname": "opening_balance_json",
+      "fieldtype": "Code",
+      "label": "Opening Balance JSON",
+      "options": "JSON"
+    },
+    {
+      "fieldname": "payment_reconciliation_json",
+      "fieldtype": "Code",
+      "label": "Payment Reconciliation JSON",
+      "options": "JSON"
+    },
+    {
+      "fieldname": "details_json",
+      "fieldtype": "Code",
+      "label": "Details JSON",
+      "options": "JSON"
+    },
+    {
+      "fieldname": "created_invoice_status",
+      "fieldtype": "Data",
+      "label": "Created Invoice Status"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}

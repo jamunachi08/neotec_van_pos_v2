@@ -1,0 +1,101 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec POS Sync Log",
+  "module": "Neotec VAN POS",
+  "custom": 0,
+  "istable": 0,
+  "issingle": 0,
+  "autoname": "hash",
+  "engine": "InnoDB",
+  "field_order": [
+    "device",
+    "sync_type",
+    "offline_id",
+    "status",
+    "payload_hash",
+    "payload_json",
+    "response_json",
+    "reference_doctype",
+    "reference_name",
+    "error_message",
+    "last_seen_on",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "device",
+      "fieldtype": "Link",
+      "label": "Device",
+      "options": "Neotec POS Device"
+    },
+    {
+      "fieldname": "sync_type",
+      "fieldtype": "Data",
+      "label": "Sync Type"
+    },
+    {
+      "fieldname": "offline_id",
+      "fieldtype": "Data",
+      "label": "Offline ID"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nSuccess\nFailed",
+      "default": "Pending"
+    },
+    {
+      "fieldname": "payload_hash",
+      "fieldtype": "Data",
+      "label": "Payload Hash"
+    },
+    {
+      "fieldname": "payload_json",
+      "fieldtype": "Code",
+      "label": "Payload JSON",
+      "options": "JSON"
+    },
+    {
+      "fieldname": "response_json",
+      "fieldtype": "Code",
+      "label": "Response JSON",
+      "options": "JSON"
+    },
+    {
+      "fieldname": "reference_doctype",
+      "fieldtype": "Data",
+      "label": "Reference DocType"
+    },
+    {
+      "fieldname": "reference_name",
+      "fieldtype": "Data",
+      "label": "Reference Name"
+    },
+    {
+      "fieldname": "error_message",
+      "fieldtype": "Small Text",
+      "label": "Error Message"
+    },
+    {
+      "fieldname": "last_seen_on",
+      "fieldtype": "Datetime",
+      "label": "Last Seen On"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}
