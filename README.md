@@ -39,6 +39,11 @@ These wrappers remain available to reduce mobile breaking changes:
 - `neotec_van_pos.api.opening_shift`
 - `neotec_van_pos.api.closing_shift`
 - `neotec_van_pos.api.create_invoice`
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 45170f0dd3f897b2b9c881eeaab561f2339a8842
 
 
 ## POS Terminal UI
@@ -52,3 +57,7 @@ Included UI assets:
 - API methods:
   - `neotec_van_pos.api.ui_settings.get_ui_settings`
   - `neotec_van_pos.api.ui_settings.save_ui_settings`
+<<<<<<< HEAD
+=======
+>>>>>>> ae8b879 (Update: UI installable version v2.1)
+>>>>>>> 45170f0dd3f897b2b9c881eeaab561f2339a8842

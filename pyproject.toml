@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [project]
 name = "neotec_van_pos"
 authors = [
@@ -16,3 +17,30 @@ build-backend = "flit_core.buildapi"
 [tool.bench.frappe-dependencies]
 frappe = ">=15.0.0,<16.0.0"
 erpnext = ">=15.0.0,<16.0.0"
+=======
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neotec_van_pos"
+<<<<<<< HEAD
+version = "2.0.0"
+=======
+version = "2.1.0"
+>>>>>>> ae8b879 (Update: UI installable version v2.1)
+description = "Neotec VAN POS v2 for Frappe/ERPNext"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["neotec_van_pos*"]
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15,<16"
+erpnext = ">=15,<16"
+>>>>>>> 45170f0dd3f897b2b9c881eeaab561f2339a8842
