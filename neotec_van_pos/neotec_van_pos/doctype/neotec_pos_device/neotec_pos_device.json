@@ -1,0 +1,107 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec POS Device",
+  "module": "Neotec VAN POS",
+  "custom": 0,
+  "istable": 0,
+  "issingle": 0,
+  "autoname": "hash",
+  "engine": "InnoDB",
+  "field_order": [
+    "device_name",
+    "enabled",
+    "company",
+    "pos_profile",
+    "warehouse",
+    "device_user",
+    "route_name",
+    "api_key",
+    "api_secret_hash",
+    "access_token",
+    "last_sync_on",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "device_name",
+      "fieldtype": "Data",
+      "label": "Device Name",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "enabled",
+      "fieldtype": "Check",
+      "label": "Enabled",
+      "default": "1"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "pos_profile",
+      "fieldtype": "Link",
+      "label": "POS Profile",
+      "options": "POS Profile"
+    },
+    {
+      "fieldname": "warehouse",
+      "fieldtype": "Link",
+      "label": "Warehouse",
+      "options": "Warehouse"
+    },
+    {
+      "fieldname": "device_user",
+      "fieldtype": "Link",
+      "label": "Device User",
+      "options": "User"
+    },
+    {
+      "fieldname": "route_name",
+      "fieldtype": "Data",
+      "label": "Route Name"
+    },
+    {
+      "fieldname": "api_key",
+      "fieldtype": "Data",
+      "label": "API Key",
+      "read_only": 1
+    },
+    {
+      "fieldname": "api_secret_hash",
+      "fieldtype": "Data",
+      "label": "API Secret Hash",
+      "read_only": 1
+    },
+    {
+      "fieldname": "access_token",
+      "fieldtype": "Data",
+      "label": "Access Token",
+      "read_only": 1
+    },
+    {
+      "fieldname": "last_sync_on",
+      "fieldtype": "Datetime",
+      "label": "Last Sync On",
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}

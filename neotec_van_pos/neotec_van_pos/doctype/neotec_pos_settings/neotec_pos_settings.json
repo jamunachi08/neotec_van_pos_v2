@@ -1,0 +1,135 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec POS Settings",
+  "module": "Neotec VAN POS",
+  "custom": 0,
+  "istable": 0,
+  "issingle": 1,
+  "autoname": "prompt",
+  "engine": "InnoDB",
+  "field_order": [
+    "company",
+    "pos_profile",
+    "warehouse",
+    "walk_in_customer",
+    "default_customer_group",
+    "default_territory",
+    "default_tax_category",
+    "update_stock",
+    "zatca_section",
+    "certificate_path",
+    "private_key_path",
+    "public_key_path",
+    "previous_invoice_hash",
+    "terminal_section",
+    "card_terminal_provider",
+    "card_terminal_config_json"
+  ],
+  "fields": [
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 0
+    },
+    {
+      "fieldname": "pos_profile",
+      "fieldtype": "Link",
+      "label": "POS Profile",
+      "options": "POS Profile"
+    },
+    {
+      "fieldname": "warehouse",
+      "fieldtype": "Link",
+      "label": "Warehouse",
+      "options": "Warehouse"
+    },
+    {
+      "fieldname": "walk_in_customer",
+      "fieldtype": "Link",
+      "label": "Walk In Customer",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "default_customer_group",
+      "fieldtype": "Link",
+      "label": "Default Customer Group",
+      "options": "Customer Group"
+    },
+    {
+      "fieldname": "default_territory",
+      "fieldtype": "Link",
+      "label": "Default Territory",
+      "options": "Territory"
+    },
+    {
+      "fieldname": "default_tax_category",
+      "fieldtype": "Link",
+      "label": "Default Tax Category",
+      "options": "Tax Category"
+    },
+    {
+      "fieldname": "update_stock",
+      "fieldtype": "Check",
+      "label": "Update Stock",
+      "default": "1"
+    },
+    {
+      "fieldname": "zatca_section",
+      "fieldtype": "Section Break",
+      "label": "ZATCA"
+    },
+    {
+      "fieldname": "certificate_path",
+      "fieldtype": "Data",
+      "label": "Certificate Path"
+    },
+    {
+      "fieldname": "private_key_path",
+      "fieldtype": "Data",
+      "label": "Private Key Path"
+    },
+    {
+      "fieldname": "public_key_path",
+      "fieldtype": "Data",
+      "label": "Public Key Path"
+    },
+    {
+      "fieldname": "previous_invoice_hash",
+      "fieldtype": "Small Text",
+      "label": "Previous Invoice Hash"
+    },
+    {
+      "fieldname": "terminal_section",
+      "fieldtype": "Section Break",
+      "label": "Terminal"
+    },
+    {
+      "fieldname": "card_terminal_provider",
+      "fieldtype": "Data",
+      "label": "Card Terminal Provider"
+    },
+    {
+      "fieldname": "card_terminal_config_json",
+      "fieldtype": "Code",
+      "label": "Card Terminal Config JSON",
+      "options": "JSON"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}
