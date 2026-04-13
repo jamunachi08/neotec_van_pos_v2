@@ -1,0 +1,66 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec POS Sync Session",
+  "module": "Neotec VAN POS",
+  "custom": 0,
+  "istable": 0,
+  "issingle": 0,
+  "autoname": "hash",
+  "engine": "InnoDB",
+  "field_order": [
+    "device",
+    "status",
+    "request_count",
+    "success_count",
+    "failed_count",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "device",
+      "fieldtype": "Link",
+      "label": "Device",
+      "options": "Neotec POS Device"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "In Progress\nCompleted\nCompleted With Errors",
+      "default": "In Progress"
+    },
+    {
+      "fieldname": "request_count",
+      "fieldtype": "Int",
+      "label": "Request Count",
+      "default": "0"
+    },
+    {
+      "fieldname": "success_count",
+      "fieldtype": "Int",
+      "label": "Success Count",
+      "default": "0"
+    },
+    {
+      "fieldname": "failed_count",
+      "fieldtype": "Int",
+      "label": "Failed Count",
+      "default": "0"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}
