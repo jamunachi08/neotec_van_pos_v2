@@ -1,0 +1,86 @@
+{
+  "doctype": "DocType",
+  "name": "Neotec POS UI Settings",
+  "module": "Neotec VAN POS",
+  "issingle": 1,
+  "track_changes": 1,
+  "custom": 0,
+  "engine": "InnoDB",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "Sales User",
+      "read": 1
+    }
+  ],
+  "fields": [
+    {
+      "fieldname": "app_title",
+      "fieldtype": "Data",
+      "label": "App Title",
+      "reqd": 1,
+      "default": "Neotec POS Terminal"
+    },
+    {
+      "fieldname": "app_subtitle",
+      "fieldtype": "Data",
+      "label": "App Subtitle",
+      "default": "Billing, sync, and cashier workflow"
+    },
+    {
+      "fieldname": "terminal_code",
+      "fieldtype": "Data",
+      "label": "Terminal Code",
+      "default": "VAN-01"
+    },
+    {
+      "fieldname": "device_code",
+      "fieldtype": "Data",
+      "label": "Device Code",
+      "default": "NEOTEC-01"
+    },
+    {
+      "fieldname": "theme_key",
+      "fieldtype": "Select",
+      "label": "Theme",
+      "options": "neotec\nsunset\ngraphite\nemerald",
+      "default": "neotec"
+    },
+    {
+      "fieldname": "editable_mode",
+      "fieldtype": "Check",
+      "label": "Editable Mode",
+      "default": "1"
+    },
+    {
+      "fieldname": "default_customer",
+      "fieldtype": "Link",
+      "label": "Default Customer",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "enable_barcode_scan",
+      "fieldtype": "Check",
+      "label": "Enable Barcode Scan",
+      "default": "1"
+    },
+    {
+      "fieldname": "enable_offline_badge",
+      "fieldtype": "Check",
+      "label": "Enable Offline Badge",
+      "default": "1"
+    }
+  ],
+  "actions": [],
+  "links": [],
+  "states": []
+}

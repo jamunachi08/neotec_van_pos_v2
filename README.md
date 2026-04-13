@@ -39,3 +39,19 @@ These wrappers remain available to reduce mobile breaking changes:
 - `neotec_van_pos.api.opening_shift`
 - `neotec_van_pos.api.closing_shift`
 - `neotec_van_pos.api.create_invoice`
+<<<<<<< HEAD
+=======
+
+
+## POS Terminal UI
+This package now includes a configurable Desk page at `/app/neotec-pos-terminal`.
+
+Included UI assets:
+- React-based POS terminal screen
+- editable screen designer modal
+- color palette selector
+- Single DocType: `Neotec POS UI Settings`
+- API methods:
+  - `neotec_van_pos.api.ui_settings.get_ui_settings`
+  - `neotec_van_pos.api.ui_settings.save_ui_settings`
+>>>>>>> ae8b879 (Update: UI installable version v2.1)

@@ -1,0 +1,15 @@
+{
+  "doctype": "Page",
+  "name": "neotec-pos-terminal",
+  "module": "Neotec VAN POS",
+  "title": "Neotec POS Terminal",
+  "standard": "Yes",
+  "roles": [
+    {
+      "role": "System Manager"
+    },
+    {
+      "role": "Sales User"
+    }
+  ]
+}
